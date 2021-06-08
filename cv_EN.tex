@@ -1,0 +1,172 @@
+% !TEX encoding = MacOSRoman
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[spanish,activeacute]{babel}
+\usepackage[applemac]{inputenc}
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Thomas} % Your first name
+\familyname{Capelle} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{ Creative Engineering}
+\address{73000, Chambéry}{France}
+\mobile{(+33) 781 45 60 16}
+\email{tcapelle@protonmail.com}
+\homepage{tcapelle.github.io/}{tcapelle.github.io/} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{Belgian-Chilean, 34}
+\photo[70pt][0.4pt]{pictures/picture_low} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Professional Experience}
+\cventry{2018-present}{Research Engineer}{}{\textsc{INES CEA}}{Grenoble (France)}{
+\begin{itemize}
+\item Development of algorithms for failure detection in Photovoltaic Systems
+\item Deep Learning model for parameter regression for IV- curve of photovoltaic modules
+\item Thermal Image segmentation and classification model
+\item Project engineer and coordination for Franco-Chilean partnership, international cooperation with multidisciplinary laboratories.
+\end{itemize}}
+
+\cventry{2017-2018}{Post-doc}{}{\textsc{Inserm - Inria}}{Grenoble (France)}{
+\begin{itemize}
+\item Integration of spatial models with air quality and forecast models.
+\end{itemize}}
+
+\cventry{2013--2016}{PhD}{équipe STEEP}{\textsc{Inria}}{Grenoble (France)}{
+\begin{itemize}
+\item Development of mathematical frameworks for urban/transport model calibration
+\item Multidisciplinary team work (Engineers, Economists, Urbanists)
+\item Supervision of interns work
+\item International conferences and peer-reviewed publications
+\end{itemize}}
+
+%------------------------------------------------
+\cventry{2011}{Master Internship}{\textsc{CIRRELT}}{Polytech}{Montréal (Canada)}{Location and Routing modelling : Development of algorithms for logistics}
+
+\cventry{summer 2010}{Development Engineer}{\textsc{LABTUS}}{Santiago (Chile)}{}{Development of algorithms to estimate attractors for MUSSA models for Santiago}
+
+%------------------------------------------------
+\cventry{2010}{Assistant Profesor}{}{Universidad de los Andes}{Santiago (Chile)}{Analysis and Algebra for engineers}
+
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2013--2016}{PhD Mathematics-Computer Science}{Université de Grenoble-Alpes}{Grenoble}{}{}  % Arguments not required can be left empty
+\cventry{2011--2012}{Master in Sciences, Transportation Economics}{Universidad de Chile}{Santiago}{}{}
+\cventry{2004-2012}{Engineer in Applied Mathematics}{Universidad de Chile}{Santiago}{}{}
+
+%\section{These de Master}
+%
+%\cvitem{Title}{\emph{The location and routing problem with pickup and delivery and time windows contraints}}
+%\cvitem{Supervisors}{Professor Cristián Cortés \& Pablo Rey \& Michel Gendreau}
+%\cvitem{Description}{Dans ce travail en propose de résoudre simultanément le problem de localisation des depots et le routage des véhicules, en respectant les contraints de temp et des clients. On propose un méthode de \textit{branch and price} pour découper le problème en deux.}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer Skills}
+
+\cvitem{Coding}{Python (Pytorch, numpy, pandas, sklearn), Matlab, CPLEX}
+\cvitem{Software}{Latex, word processing, Adobe suite, Linux, Mac and Windows}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+%\cvitemwithcomment{Espagnol}{langue maternelle}{}
+%\cvitemwithcomment{Français}{bilingue}{}
+%\cvitemwithcomment{Anglais}{bilingue}{}
+\textbf{Spanish}: mothertongue, \textbf{Franch}: bilingual, \textbf{English}: bilingual.
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Other Interests}
+$\bullet$ Experienced Sailor, sailed many classes and two world championships\\
+$\bullet$ Guitar player (10 years) and blues lover \\
+$\bullet$ Director and Producer of a DVD, for the Chilean musician Alejandro Silva\\
+$\bullet$ Actor, Technical Director and Production in the chilean TV series \textsc{Efecto Picaflor} (2002-2010)
+
+
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+%
+%\clearpage
+%
+%\recipient{Inddigo}{367, avenue du Grand Ariétaz, 73024 Chambéry Cedex} % Letter recipient
+%\date{10 Avril 2016} % Letter date
+%\opening{Candidature spontanée,} % Opening greeting
+%\closing{Je vous propose de développer mes motivations et mes aptitudes pour ce poste au cours d’un entretien et vous prie d’agréer mes respectueuses salutations. } % Closing phrase
+%\enclosure[PJ]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%Afin de concilier l`evolution de plus en plus complexe des villes avec une politique de développement durable, la modélisation devient un outil nécéssaire pour répondre aux nombreuses problématiques liées à la qualité de vie des citoyens : par exemple,  la modélisation intégrée de transport et usage des sols pour évaluer les politiques de transport dans les grandes villes européennes.
+%
+%Le problème du transport urbain est un de mes principaux intérêts. Après mes études d`ingénieur en mathématiques, le besoin d`application de mes connaissances m`ont fait suivre un master d`ingénieur mention transport. Après mon master et afin d`approfondir les problématiques liées aux modèles de grande taille, la possibilité d`une thèse dans l`équipe STEEP a l`Inria Grenoble m`a été proposé.
+%
+%Pendant ma thèse, je me suis engagé dans des travaux de recherche pour construire des outils mathématiques de calage automatique pour le modèle de transport et usage des sols Tranus, en collaboration avec le créateur du logiciel, Tomás de la Barra. Je me suis aussi particulièrement intéressé aux modèles économiques d`affectation spatiale dans le but de développer une version alternative du module d`usage des sols en \textbf{Python}, plus robuste et performante. 
+%
+%D`un naturel motivé et communiquant, je me sens particulièrement attiré par l`ambiance à la fois conviviale et stimulante d`une entreprise comme Inddigo. 
+%
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
